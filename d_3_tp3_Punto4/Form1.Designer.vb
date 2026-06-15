@@ -25,6 +25,7 @@ Partial Class Form1
         dtvMatriz = New DataGridView()
         cmdEjecutar = New Button()
         lstVector = New ListBox()
+        Label1 = New Label()
         CType(dtvMatriz, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
@@ -32,9 +33,11 @@ Partial Class Form1
         ' 
         dtvMatriz.AllowUserToAddRows = False
         dtvMatriz.AllowUserToDeleteRows = False
+        dtvMatriz.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells
+        dtvMatriz.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells
         dtvMatriz.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
         dtvMatriz.ColumnHeadersVisible = False
-        dtvMatriz.Location = New Point(12, 47)
+        dtvMatriz.Location = New Point(12, 67)
         dtvMatriz.Name = "dtvMatriz"
         dtvMatriz.ReadOnly = True
         dtvMatriz.RowHeadersVisible = False
@@ -54,16 +57,26 @@ Partial Class Form1
         ' lstVector
         ' 
         lstVector.FormattingEnabled = True
-        lstVector.Location = New Point(777, 47)
+        lstVector.Location = New Point(777, 67)
         lstVector.Name = "lstVector"
         lstVector.Size = New Size(202, 324)
         lstVector.TabIndex = 2
+        ' 
+        ' Label1
+        ' 
+        Label1.AutoSize = True
+        Label1.Location = New Point(12, 44)
+        Label1.Name = "Label1"
+        Label1.Size = New Size(208, 20)
+        Label1.TabIndex = 3
+        Label1.Text = "La Matriz ingresada al azar es:"
         ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(1050, 450)
+        Controls.Add(Label1)
         Controls.Add(lstVector)
         Controls.Add(cmdEjecutar)
         Controls.Add(dtvMatriz)
@@ -71,10 +84,12 @@ Partial Class Form1
         Text = "Form1"
         CType(dtvMatriz, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
+        PerformLayout()
     End Sub
 
     Friend WithEvents dtvMatriz As DataGridView
     Friend WithEvents cmdEjecutar As Button
     Friend WithEvents lstVector As ListBox
+    Friend WithEvents Label1 As Label
 
 End Class
