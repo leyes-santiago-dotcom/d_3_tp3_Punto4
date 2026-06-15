@@ -42,7 +42,7 @@ Partial Class Form1
         dtvMatriz.ReadOnly = True
         dtvMatriz.RowHeadersVisible = False
         dtvMatriz.RowHeadersWidth = 51
-        dtvMatriz.Size = New Size(759, 324)
+        dtvMatriz.Size = New Size(220, 224)
         dtvMatriz.TabIndex = 0
         ' 
         ' cmdEjecutar
@@ -57,9 +57,9 @@ Partial Class Form1
         ' lstVector
         ' 
         lstVector.FormattingEnabled = True
-        lstVector.Location = New Point(777, 67)
+        lstVector.Location = New Point(238, 67)
         lstVector.Name = "lstVector"
-        lstVector.Size = New Size(202, 324)
+        lstVector.Size = New Size(220, 224)
         lstVector.TabIndex = 2
         ' 
         ' Label1
@@ -75,7 +75,7 @@ Partial Class Form1
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(1050, 450)
+        ClientSize = New Size(475, 312)
         Controls.Add(Label1)
         Controls.Add(lstVector)
         Controls.Add(cmdEjecutar)
